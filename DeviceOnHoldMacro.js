@@ -1,7 +1,7 @@
 import xapi from 'xapi';
 
-let botToken = "replaceWithBotToken"
-var navigatorDeviceId
+let botToken = "replaceWithBotToken" // <== replace with the BOT token.
+var navigatorDeviceId //this will get updated with the correct ID when the macro first runs.
 
 async function getDeviceId(){
   let thisDeviceId = await xapi.Status.Webex.DeveloperId.get()
