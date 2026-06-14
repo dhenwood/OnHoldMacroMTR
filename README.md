@@ -1,7 +1,11 @@
-# OnHoldMacroMTR
-A macro to update the outside Cisco Navigator when the room is placed On-Hold. **Note**: the following steps require the outside navigator to be in standalone mode but in the same workspace as the MTR (not in paired mode).
+# On-Hold Macro for Cisco MTR devices
+## Background
+This repo outlines the steps to update the outside Navigator of a Cisco MTR device to (1) blue LED strip (2) blue wallpaper (3) workspace logo to blue and (4) updates the text to indicate "On Hold". For devices running the native RoomOS experience, see [this repo](https://github.com/dhenwood/OnHoldMacro) for the details. **Note**: the following steps require the outside navigator to be in standalone mode but in the same workspace as the MTR (not in paired mode).
 
-A BOT token is used to send a message from the MTR device to the Navigator. The steps to create a BOT can be found here: https://developer.webex.com/messaging/docs/bots. The details of the BOT are not too important as they are not exposed to any user. Once created, **save the BOT token** to notepad.
+![alt text](https://github.com/dhenwood/OnHoldMacro/raw/main/OnHoldExample.png)
+
+## Setup
+A BOT token is used to send a message from the MTR device inside the room to the Navigator outside. The steps to create a BOT can be found here: https://developer.webex.com/messaging/docs/bots. The details of the BOT are not too important as they are not exposed to any user. Once created, **save the BOT token** to notepad.
 
 In Control Hub; Select Workspaces, then search for the workspace you wish to configure. Follow the below steps to Edit the API access.
 
